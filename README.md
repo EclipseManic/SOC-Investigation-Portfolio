@@ -60,8 +60,7 @@ Each investigation follows a consistent SOC workflow:
 ## 🧾 Report Structure
 Each investigation folder contains:
 
-- `report.md` → Full investigation report  
-- `screenshots/` → Supporting evidence  
+- `report.md` → Full investigation report
 
 Every report includes:
 - Case overview  
