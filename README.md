@@ -57,7 +57,7 @@ Report link → https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob
 ### • Backup Server Compromise — Telly
 SOC/DFIR investigation of a compromised backup server where an attacker exploited a Telnet vulnerability to gain root access, establish persistence, and exfiltrate a sensitive customer database.
 Includes PCAP network analysis, command reconstruction, persistence tracking, and data-exfiltration validation workflow.
-Report link → https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Telly%20%E2%80%93%20DFIR%20Investigation/report.md
+Report link → https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/README.md
 
 
 (Additional investigations will be added over time.)
