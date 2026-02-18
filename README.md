@@ -48,11 +48,10 @@ Each investigation follows a consistent SOC workflow:
 
 ## 📂 Investigation Cases
 
-### Phishing Email Incident — PhishNet
+### • Phishing Email Incident — PhishNet
 SOC investigation of a vendor-impersonation phishing email delivering a malicious attachment.  
 Includes manual analysis and tool-assisted detection workflow.
-
-→ report link: https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Phishing_Email_Investigation/report.md
+Report link → https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Phishing_Email_Investigation/report.md
 
 
 (Additional investigations will be added over time.)
