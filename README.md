@@ -48,10 +48,12 @@ Each investigation follows a consistent SOC workflow:
 
 ## 📂 Investigation Cases
 
-### 🌐 Network Traffic Investigations
-- **Packet Puzzle – Network Traffic Analysis**  
-  Investigation of suspicious traffic within a packet capture to identify attacker activity and potential compromise.  
-  👉 [View Report](packet-puzzle-htb/report.md)
+### Phishing Email Incident — PhishNet
+SOC investigation of a vendor-impersonation phishing email delivering a malicious attachment.  
+Includes manual analysis and tool-assisted detection workflow.
+
+→ report link: https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Phishing_Email_Investigation/report.md
+
 
 (Additional investigations will be added over time.)
 
