@@ -1,30 +1,30 @@
-# 📧 Phishing Email Incident Investigation — PhishNet (HTB Sherlock)
+![1770791819040](https://github.com/user-attachments/assets/1d5afea2-8a03-4999-96e9-d10cacc01866)# 📧 Phishing Email Incident Investigation — Vendor Impersonation Campaign
 
 ## 🧾 Case Overview
 
-An accounting team received an urgent payment request from a known vendor. The email appeared legitimate but contained a suspicious payment link and a ZIP attachment. The objective of this investigation was to determine whether the email was malicious, identify attacker infrastructure, analyze the attachment, and confirm the attacker’s intent.
+An accounting team received an urgent payment request appearing to originate from a known vendor. The message contained a payment link and a compressed attachment disguised as an invoice. The objective of this investigation was to determine whether the email was malicious, identify attacker infrastructure, analyze the attachment, and confirm the attacker’s intent.
 
-This case was investigated using manual email analysis techniques combined with a custom-built automation tool designed to detect phishing indicators and speed up triage.
+This investigation was conducted using manual email analysis techniques supported by a custom-built automation tool to accelerate detection and validation.
 
 ---
 
 ## 🎯 Investigation Objectives
 
-* Identify the true sender origin
-* Analyze email routing and authentication
+* Identify true sender origin
+* Validate email authentication and routing
 * Inspect phishing link and domain
 * Analyze attachment and payload
-* Extract indicators of compromise
-* Validate findings using automated detection
+* Extract indicators of compromise (IOCs)
+* Confirm attacker technique and intent
 
 ---
 
 ## 🛠️ Tools Used
 
-* Email header analysis
-* Base64 decoding (certutil)
+* Manual email header analysis
+* Base64 decoding using certutil
 * Hash inspection
-* Manual URL inspection
+* URL inspection
 * **Advanced Phishing Mail Detector (custom tool)**
 
 Custom tool repository:
@@ -32,38 +32,44 @@ Custom tool repository:
 
 ---
 
-## 🤖 Role of the Custom Detection Tool
+## 🤖 Tool-Assisted Detection
 
-The **Advanced Phishing Mail Detector** was used during the investigation to automate detection of phishing indicators and validate manual findings.
+A custom automation tool, **Advanced Phishing Mail Detector**, was used to assist with triage and validation of phishing indicators during the investigation.
 
 The tool performed:
 
 * Header anomaly detection
-* Sender and reply‑to comparison
-* Domain reputation checks
+* Sender vs reply-to comparison
+* Domain and IP reputation checks
 * Attachment risk detection
-* Link inspection
-* Keyword pressure detection
+* Keyword pressure analysis
+* Final phishing risk scoring
 
-### Why the Tool Was Important
+The automated analysis flagged:
 
-Manual email investigations require checking multiple indicators one by one. The tool automated these checks and quickly highlighted suspicious elements, allowing faster triage.
+* Reply-to mismatch
+* Suspicious infrastructure
+* Malicious attachment
+* Urgent social-engineering language
+* Final verdict: **UNSAFE**
 
-**Impact on investigation:**
+Evidence:  ![1770791819040](https://github.com/user-attachments/assets/431a0b29-8f7b-48d3-893d-0b736906f0a7)
 
-* Reduced manual checking time
-* Automatically flagged malicious attachment
-* Detected reply‑to mismatch
-* Identified suspicious infrastructure
-* Confirmed phishing risk score
 
-Estimated time saved:
-Manual investigation of all indicators would take significantly longer. Automation allowed immediate identification of high‑risk elements and reduced investigation time to a few minutes while still verifying findings manually.
+---
 
-The tool did not replace analysis but accelerated detection and supported conclusions.
+## ⏱️ Automation Impact on Workflow
 
-Evidence: ![1770791819040](https://github.com/user-attachments/assets/624671a3-7d15-4475-a0e1-bd28cd4f4ea4)
+Manual analysis of all email indicators requires checking headers, domains, attachments, and message content individually. The custom tool automated these checks and produced a structured summary of risks.
 
+This improved investigation efficiency by:
+
+* Highlighting high-risk indicators immediately
+* Reducing repetitive manual checks
+* Supporting faster triage
+* Providing validation for manual findings
+
+Automation did not replace analysis but accelerated detection and improved investigation workflow.
 
 ---
 
@@ -71,7 +77,7 @@ Evidence: ![1770791819040](https://github.com/user-attachments/assets/624671a3-7
 
 ### 1. Header Analysis
 
-Email header review revealed:
+Header review identified the following infrastructure:
 
 * Originating IP: **45.67.89.10**
 * Relay server: **203.0.113.25**
@@ -81,22 +87,23 @@ Email header review revealed:
 * DKIM: Pass
 * DMARC: Pass
 
-Despite authentication passing, sender behavior and attachment indicated malicious intent.
+Although authentication passed, the reply-to mismatch and attachment raised suspicion.
 
-Evidence: ![1770791819040](https://github.com/user-attachments/assets/da7cec1c-eb6f-405f-bda1-f3070b04cfac)
+Evidence:   ![1770791819040](https://github.com/user-attachments/assets/2a941dcb-8795-4ac8-af60-743f76b3e210)
+
 
 
 ---
 
-### 2. Phishing Link
+### 2. Phishing Link Analysis
 
-The email contained a payment link:
+The email contained a payment link pointing to:
 
 ```
 https://secure.business-finance.com
 ```
 
-The domain impersonated a legitimate finance vendor and was designed to trick recipients into trusting the email.
+The domain impersonated a legitimate vendor domain and was intended to appear trustworthy.
 
 ---
 
@@ -108,19 +115,19 @@ Attachment name:
 Invoice_2025_Payment.zip
 ```
 
-SHA256 hash:
+SHA-256:
 
 ```
 8379C41239E9AF845B2AB6C27A7509AE8804D7D73E455C800A551B22BA25BB4A
 ```
 
-Inside archive:
+Contents:
 
 ```
 invoice_document.pdf.bat
 ```
 
-The file was disguised as a PDF but was actually an executable batch file, indicating malware delivery.
+The file was disguised as a PDF but was actually an executable batch file designed to run on the victim system.
 
 ---
 
@@ -132,22 +139,21 @@ Encoded content was decoded using:
 certutil -decode base64_content.txt Invoice_2025_Payment.zip
 ```
 
-Recovered ZIP revealed the disguised executable.
+Recovered archive confirmed presence of disguised executable.
 
-Evidence: ![1770791819382](https://github.com/user-attachments/assets/c98fc143-d51c-495d-8c79-8e63ddbd94df)
+Evidence:    ![1770791819382](https://github.com/user-attachments/assets/d613e7b9-402d-4a48-9c28-67d543df9204)
 
 
 ---
 
 ## 📍 Key Findings
 
-* Vendor impersonation email
+* Vendor impersonation phishing email
 * Malicious ZIP attachment
 * Disguised executable payload
-* Phishing payment link
-* Reply‑To mismatch
+* Reply-to mismatch
 * Suspicious sender infrastructure
-* Automated tool confirmed phishing indicators
+* Tool-assisted detection confirmed risk
 
 ---
 
@@ -159,7 +165,7 @@ Evidence: ![1770791819382](https://github.com/user-attachments/assets/c98fc143-d
 | 2    | User prompted for urgent payment |
 | 3    | Attachment opened                |
 | 4    | Malicious script execution       |
-| 5    | Potential system compromise      |
+| 5    | Potential compromise             |
 
 ---
 
@@ -184,11 +190,9 @@ Evidence: ![1770791819382](https://github.com/user-attachments/assets/c98fc143-d
 
 ## 🧠 Analyst Assessment
 
-This email represents a vendor payment phishing attack delivering a malicious attachment. The attacker used domain impersonation and urgency to pressure the recipient into opening a disguised executable.
+The email represents a vendor payment phishing attack delivering a malicious attachment disguised as an invoice. The attacker used domain impersonation and urgency to pressure the recipient into opening the file.
 
-Manual investigation confirmed suspicious infrastructure and malicious payload delivery. The custom phishing detection tool accelerated the process by automatically flagging high‑risk indicators and validating the findings.
-
-Automation significantly reduced analysis time while still allowing full manual verification, making the investigation more efficient and structured.
+Manual analysis confirmed suspicious infrastructure and payload delivery. The custom detection tool accelerated the identification of key indicators and validated the findings, improving investigation efficiency while maintaining manual verification.
 
 ---
 
@@ -198,15 +202,13 @@ Automation significantly reduced analysis time while still allowing full manual 
 * Block phishing domain
 * Quarantine attachment hash
 * Alert users
-* Add detection rules for similar emails
+* Add detection rules
 * Reset potentially exposed credentials
 
 ---
 
 ## 📌 Conclusion
 
-The investigation confirmed a phishing campaign delivering malware through a disguised invoice attachment. The case demonstrates practical SOC workflow including email header analysis, payload recovery, indicator extraction, and tool‑assisted detection.
+The investigation confirmed a phishing campaign delivering malware through a disguised invoice attachment. The case demonstrates practical SOC workflow including email header analysis, payload recovery, indicator extraction, and tool-assisted detection.
 
-The integration of a custom phishing detection tool improved investigation speed, helped identify key indicators quickly, and supported accurate conclusions while maintaining manual verification.
-
-
+The integration of automation improved triage speed, supported accurate findings, and strengthened the overall investigation process.
