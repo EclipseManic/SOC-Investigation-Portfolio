@@ -1,4 +1,4 @@
-![1770791819040](https://github.com/user-attachments/assets/1d5afea2-8a03-4999-96e9-d10cacc01866)# 📧 Phishing Email Incident Investigation — Vendor Impersonation Campaign
+# 📧 Phishing Email Incident Investigation — Vendor Impersonation Campaign
 
 ## 🧾 Case Overview
 
@@ -212,3 +212,4 @@ Manual analysis confirmed suspicious infrastructure and payload delivery. The cu
 The investigation confirmed a phishing campaign delivering malware through a disguised invoice attachment. The case demonstrates practical SOC workflow including email header analysis, payload recovery, indicator extraction, and tool-assisted detection.
 
 The integration of automation improved triage speed, supported accurate findings, and strengthened the overall investigation process.
+
