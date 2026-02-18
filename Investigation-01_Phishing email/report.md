@@ -62,8 +62,8 @@ Manual investigation of all indicators would take significantly longer. Automati
 
 The tool did not replace analysis but accelerated detection and supported conclusions.
 
-Evidence:
-https://media.licdn.com/dms/image/v2/D5622AQG973wwzHjmoA/feedshare-shrink_800/B56ZxLatZSKQAg-/0/1770791819041?e=1773273600&v=beta&t=ofrqzfYVBwheSp4JCbFlXuMNuOeMibEyqlE6QH-L9Og
+Evidence: ![1770791819040](https://github.com/user-attachments/assets/624671a3-7d15-4475-a0e1-bd28cd4f4ea4)
+
 
 ---
 
@@ -208,4 +208,5 @@ Automation significantly reduced analysis time while still allowing full manual 
 The investigation confirmed a phishing campaign delivering malware through a disguised invoice attachment. The case demonstrates practical SOC workflow including email header analysis, payload recovery, indicator extraction, and tool‑assisted detection.
 
 The integration of a custom phishing detection tool improved investigation speed, helped identify key indicators quickly, and supported accurate conclusions while maintaining manual verification.
+
 
