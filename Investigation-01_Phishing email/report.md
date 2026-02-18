@@ -63,7 +63,7 @@ Manual investigation of all indicators would take significantly longer. Automati
 The tool did not replace analysis but accelerated detection and supported conclusions.
 
 Evidence:
-![Tool Output](screenshots/tool.png)
+https://media.licdn.com/dms/image/v2/D5622AQG973wwzHjmoA/feedshare-shrink_800/B56ZxLatZSKQAg-/0/1770791819041?e=1773273600&v=beta&t=ofrqzfYVBwheSp4JCbFlXuMNuOeMibEyqlE6QH-L9Og
 
 ---
 
@@ -83,8 +83,8 @@ Email header review revealed:
 
 Despite authentication passing, sender behavior and attachment indicated malicious intent.
 
-Evidence:
-![Header Analysis](screenshots/header.png)
+Evidence: ![1770791819040](https://github.com/user-attachments/assets/da7cec1c-eb6f-405f-bda1-f3070b04cfac)
+
 
 ---
 
@@ -134,8 +134,8 @@ certutil -decode base64_content.txt Invoice_2025_Payment.zip
 
 Recovered ZIP revealed the disguised executable.
 
-Evidence:
-![Decoding Process](screenshots/decode.png)
+Evidence: ![1770791819382](https://github.com/user-attachments/assets/c98fc143-d51c-495d-8c79-8e63ddbd94df)
+
 
 ---
 
@@ -208,3 +208,4 @@ Automation significantly reduced analysis time while still allowing full manual 
 The investigation confirmed a phishing campaign delivering malware through a disguised invoice attachment. The case demonstrates practical SOC workflow including email header analysis, payload recovery, indicator extraction, and tool‑assisted detection.
 
 The integration of a custom phishing detection tool improved investigation speed, helped identify key indicators quickly, and supported accurate conclusions while maintaining manual verification.
+
