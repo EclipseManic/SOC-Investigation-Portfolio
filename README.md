@@ -51,19 +51,19 @@ Each investigation follows a consistent SOC workflow:
 ### • Phishing Email Incident — PhishNet
 SOC investigation of a vendor-impersonation phishing email delivering a malicious attachment.  
 Includes manual analysis and tool-assisted detection workflow.
-Report link → https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Phishing_Email_Investigation/report.md
+Report link → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Phishing_Email_Investigation/report.md)
 
 
 ### • Backup Server Compromise — Telly
 SOC/DFIR investigation of a compromised backup server where an attacker exploited a Telnet vulnerability to gain root access, establish persistence, and exfiltrate a sensitive customer database.
 Includes PCAP network analysis, command reconstruction, persistence tracking, and data-exfiltration validation workflow.
-Report link → https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/README.md
+Report link → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Telly%20%E2%80%93%20DFIR%20Investigation/report.md)
 
 
 ### • LLMNR Poisoning Attack — Noxious
 Network forensics investigation of a rogue device performing LLMNR poisoning inside an Active Directory environment to capture NTLM authentication attempts after a mistyped file-share request.  
 Includes PCAP analysis, rogue host identification, NTLM challenge/response reconstruction, credential-exposure validation, and lateral-movement risk assessment workflow.  
-Report link → https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Noxious_LLMNR_Investigation/report.md
+Report link → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/LLMNR%20Poisoning%20Investigation/report.md)
 
 
 (Additional investigations will be added over time.)
