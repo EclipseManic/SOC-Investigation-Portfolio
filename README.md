@@ -60,6 +60,12 @@ Includes PCAP network analysis, command reconstruction, persistence tracking, an
 Report link → https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/README.md
 
 
+### • LLMNR Poisoning Attack — Noxious
+Network forensics investigation of a rogue device performing LLMNR poisoning inside an Active Directory environment to capture NTLM authentication attempts after a mistyped file-share request.  
+Includes PCAP analysis, rogue host identification, NTLM challenge/response reconstruction, credential-exposure validation, and lateral-movement risk assessment workflow.  
+Report link → https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Noxious_LLMNR_Investigation/report.md
+
+
 (Additional investigations will be added over time.)
 
 ---
