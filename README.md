@@ -66,6 +66,13 @@ Includes PCAP analysis, rogue host identification, NTLM challenge/response recon
 Report link → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/LLMNR%20Poisoning%20Investigation/report.md)
 
 
+
+### • Web Exploitation & Privilege Escalation — Packet Puzzle
+SOC investigation of an internal compromise where an attacker performed reconnaissance, exploited a vulnerable PHP service to gain RCE, deployed payloads, and attempted privilege escalation using GodPotato.  
+Includes PCAP analysis, exploit reconstruction, command tracking, payload analysis, and MITRE ATT&CK mapping workflow.  
+Report → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Network%20Intrusion%20Investigation/report.md)
+
+
 (Additional investigations will be added over time.)
 
 ---
