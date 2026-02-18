@@ -61,8 +61,8 @@ This indicates a rogue system running a poisoning tool (commonly Responder).
 
 ### Evidence
 
-(Insert provided screenshot — LLMNR traffic)
-(Insert provided screenshot — DHCP hostname kali)
+<img width="940" height="266" alt="image" src="https://github.com/user-attachments/assets/b9e46a6a-5c14-401a-b03a-586ae242879d" />
+
 
 ---
 
@@ -79,7 +79,7 @@ The rogue system replied first and forced authentication.
 
 ### Evidence
 
-(Insert provided screenshot — LLMNR query)
+<img width="1886" height="779" alt="image" src="https://github.com/user-attachments/assets/1f3b0375-cc8a-48e7-a1d3-ffd8ba924ca5" />
 
 ---
 
@@ -101,7 +101,7 @@ NTLM uses a challenge‑response mechanism. The attacker captures a hash, not th
 
 ### Evidence
 
-(Insert provided screenshot — NTLM username)
+<img width="1533" height="615" alt="image" src="https://github.com/user-attachments/assets/be2e9384-1b63-4244-8189-1986a92309f9" />
 
 ---
 
@@ -119,8 +119,10 @@ These values can be used for offline cracking.
 
 ### Evidence
 
-(Insert provided screenshot — NTLM challenge)
-(Insert provided screenshot — NTProofStr)
+<img width="940" height="259" alt="image" src="https://github.com/user-attachments/assets/fb5f626a-4fa6-4138-8a91-ecc5778bcd3d" />
+
+<img width="1782" height="625" alt="image" src="https://github.com/user-attachments/assets/a0f73e2b-ff8b-4df1-bf57-30ee246e8f4d" />
+
 
 ---
 
@@ -196,3 +198,4 @@ No plaintext password is visible in network traffic because NTLM does not send t
 The investigation confirmed an LLMNR poisoning attack inside the internal network.
 A rogue system responded to name‑resolution requests and captured NTLM authentication attempts after a user mistyped a file share path.
 Although the plaintext password was not visible, the captured NTLM data could be used for offline cracking, creating a risk of credential compromise and lateral movement inside the domain.
+
