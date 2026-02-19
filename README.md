@@ -51,13 +51,13 @@ Each investigation follows a consistent SOC workflow:
 ### • Phishing Email Incident — PhishNet
 SOC investigation of a vendor-impersonation phishing email delivering a malicious attachment.  
 Includes manual analysis and tool-assisted detection workflow.
-Report link → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Phishing_Email_Investigation/report.md)
+Report link → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Phishing%20Email%20Investigation/report.md)
 
 
 ### • Backup Server Compromise — Telly
 SOC/DFIR investigation of a compromised backup server where an attacker exploited a Telnet vulnerability to gain root access, establish persistence, and exfiltrate a sensitive customer database.
 Includes PCAP network analysis, command reconstruction, persistence tracking, and data-exfiltration validation workflow.
-Report link → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Telly%20%E2%80%93%20DFIR%20Investigation/report.md)
+Report link → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Linux%20Server%20Investigation/report.md)
 
 
 ### • LLMNR Poisoning Attack — Noxious
