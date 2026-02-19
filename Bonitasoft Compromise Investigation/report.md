@@ -36,6 +36,9 @@ The PCAP shows rapid sequential login attempts with different usernames, consist
 
 <img width="1646" height="825" alt="Screenshot 2026-02-19 093005" src="https://github.com/user-attachments/assets/0f6c0acc-5105-414b-8cf5-f6b200574493" />
 
+<img width="1908" height="409" alt="image" src="https://github.com/user-attachments/assets/c1a56e35-ac79-4119-ac4f-ae7d3bc4c534" />
+
+
 ---
 
 ## 2️⃣ Vulnerability Identification
@@ -157,4 +160,5 @@ Reconstructed script showing SSH key injection.
 ## 🧾 Conclusion
 
 The Forela Business Management Platform was compromised through credential stuffing and exploitation of a known BonitaSoft authorization bypass vulnerability. The attacker achieved RCE and persistence by injecting an SSH key. Use of legitimate hosting platforms for payload delivery highlights the need for strict outbound filtering and monitoring.
+
 
