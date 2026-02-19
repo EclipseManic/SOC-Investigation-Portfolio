@@ -34,7 +34,7 @@ The PCAP shows rapid sequential login attempts with different usernames, consist
 **Successful Credentials:** `seb.broom@forela.co.uk`
 **Attacker IP:** `138.199.59.221`
 
-> Insert screenshot: `Screenshot 2026-02-19 093005.png`
+<img width="1646" height="825" alt="Screenshot 2026-02-19 093005" src="https://github.com/user-attachments/assets/0f6c0acc-5105-414b-8cf5-f6b200574493" />
 
 ---
 
@@ -50,7 +50,8 @@ After successful authentication, Suricata generated an alert tied to a known Bon
 
 Suricata alert confirming detection of the exploit signature.
 
-> Insert screenshot: `Screenshot 2026-02-19 092709.png`
+<img width="1569" height="570" alt="Screenshot 2026-02-19 092709" src="https://github.com/user-attachments/assets/eb5fb942-6f1f-4016-9ae9-c5be6eba652b" />
+
 
 ---
 
@@ -70,7 +71,8 @@ Using this bypass, the attacker uploaded a malicious extension that enabled syst
 
 Wireshark shows the manipulated URL used to bypass access controls.
 
-> Insert screenshot: `Screenshot 2026-02-19 083720.png`
+<img width="1903" height="311" alt="Screenshot 2026-02-19 083720" src="https://github.com/user-attachments/assets/c2675079-06c0-434b-a231-fae3acf6e4df" />
+
 
 ---
 
@@ -88,7 +90,7 @@ The attacker hosted the payload on a text‑sharing site to avoid maintaining de
 
 The `wget` command appears in HTTP stream arguments.
 
-> Insert screenshot: `Screenshot 2026-02-19 092929.png`
+<img width="1912" height="403" alt="image" src="https://github.com/user-attachments/assets/6e423752-61fb-4cd0-9f93-2558260026c3" />
 
 ---
 
@@ -114,7 +116,8 @@ This grants persistent SSH access without needing a password.
 
 Reconstructed script showing SSH key injection.
 
-> Insert screenshot: `Screenshot 2026-02-19 092815.png`
+<img width="1637" height="694" alt="Screenshot 2026-02-19 092815" src="https://github.com/user-attachments/assets/c67e5335-d9df-47af-8036-db5021449228" />
+
 
 ---
 
@@ -154,3 +157,4 @@ Reconstructed script showing SSH key injection.
 ## 🧾 Conclusion
 
 The Forela Business Management Platform was compromised through credential stuffing and exploitation of a known BonitaSoft authorization bypass vulnerability. The attacker achieved RCE and persistence by injecting an SSH key. Use of legitimate hosting platforms for payload delivery highlights the need for strict outbound filtering and monitoring.
+
