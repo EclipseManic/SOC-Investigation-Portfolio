@@ -72,10 +72,15 @@ Includes PCAP analysis, exploit reconstruction, command tracking, payload analys
 Report → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Network%20Intrusion%20Investigation/report.md)
 
 
-
 ### • BonitaSoft Exploitation — Meerkat
 SOC investigation of a Business Management Platform compromise. The attacker performed credential stuffing to gain initial access, exploited CVE-2022-25237 (Authorization Bypass) to achieve RCE, and established persistence via SSH key injection using a text-sharing site.
 Report link → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Bonitasoft%20Compromise%20Investigation/report.md)
+
+
+### • Web Shell & Java Exploitation — JustSomePages
+SOC investigation of a Red Team attack simulation utilizing advanced JSP web shells and Java-based exploitation techniques.
+Includes PCAP analysis, WAF evasion detection, attack chain reconstruction (from encrypted payload delivery to PowerShell lateral movement), and the development of specific SIEM/EDR detection strategies.
+Report link  → [View Report](https://github.com/EclipseManic/SOC-Investigation-Portfolio/blob/main/Web%20Shell%20%26%20Java%20Exploitation%20Investigation/report.md)
 
 (Additional investigations will be added over time.)
 
